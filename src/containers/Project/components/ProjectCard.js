@@ -1,18 +1,15 @@
-import React from "react"
-import { Card } from "react-bootstrap";
+import React from "react";
+// import { Card } from "react-bootstrap";
+import { Card, Image } from "semantic-ui-react";
 
-export default function ProjectCard({img, title, shortText}) {
+export default function ProjectCard({ img, title, shortText }) {
   return (
-    <>
-      <Card className="m-2 b-2" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>
-            {shortText}
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </>
+    <Card className="m-2 b-2" style={{ width: "18rem" }}>
+      <Image variant="top" src={img} />
+      <Card.Content>
+        <Card.Header>{title}</Card.Header>
+        <Card.Description>{shortText}</Card.Description>
+      </Card.Content>
+    </Card>
   );
 }
