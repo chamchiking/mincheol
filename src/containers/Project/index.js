@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import { Card } from "semantic-ui-react";
 import Footer from "../../components/Footer";
 import ProjectCard from "./components/ProjectCard";
-import {project_list} from "./project";
+import {project_list} from "./contents/project";
 
 export default function Project() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 // import { Card } from "react-bootstrap";
-import { Card, Image } from "semantic-ui-react";
+import { Card, Image, Icon } from "semantic-ui-react";
 
 export default function ProjectCard({ img, title, shortText }) {
   return (
@@ -9,6 +9,12 @@ export default function ProjectCard({ img, title, shortText }) {
       <Card.Content>
         <Card.Header>{title}</Card.Header>
         <Card.Description>{shortText}</Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <a>
+          <Icon name="user" />
+          22 Friends
+        </a>
       </Card.Content>
     </Card>
   );

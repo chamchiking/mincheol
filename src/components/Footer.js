@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
@@ -35,6 +35,13 @@ export default function Footer() {
           </Col>
         </Row>
       </Container>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </>
   );
 }
