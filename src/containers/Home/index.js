@@ -3,7 +3,10 @@ import Footer from "../../components/Footer";
 import "react-vertical-timeline-component/style.min.css";
 import Timeline from "./components/Timeline";
 import AnimatedText from "react-animated-text-content";
-import { Container, Segment, Image } from "semantic-ui-react";
+import Container from "../../components/Container";
+import { Image } from "semantic-ui-react";
+import VoxelDog from '../../components/voxel-dog';
+
 
 export default function Home() {
   const src = "mincheol.png";
@@ -11,6 +14,9 @@ export default function Home() {
     <>
       <br />
       <br />
+      <Container>
+        {/* <VoxelDog /> */}
+      </Container>
       <Container>
           <Image src={src} size="small" floated="left" rounded />
           <AnimatedText
@@ -28,31 +34,13 @@ export default function Home() {
             I am an undergraduate student at Seoul National University, studying
             ECE.
           </p>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
       </Container>
-
-      <br />
-      <br />
       <Container>
         <h4>Featured publications</h4>
       </Container>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <Container>
         <h4>Experience</h4>
         <Timeline />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
       </Container>
       <Footer></Footer>
     </>
